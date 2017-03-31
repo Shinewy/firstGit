@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/video.css"/>
+		
+	</head>
+	<body>
+		<div class="newVideo">
+			<!--<div class="myvideo">-->
+			<video id="myvideo" poster="imgs/static_avatar.png" width="100%" height="100%">			<!--只能写在元素本身才能进行改变-->
+				<source src="video/12.mp4" type="video/mp4">
+				<source src="video/12.ogv" type="video/ogg">
+				<source src="video/12.webm" type="video/webm">
+				<object width="800" height="374" type="application/x-shockwave-flash" data="fallback.swf">
+					<param name="movie" value="fallback.swf" />
+					<param name="flashvars" value="autostart=true&amp;file=video.flv" />
+				</object>
+			</video>
+			<!--</div>-->
+			<div class="replaydiv">
+				<span class="replay">重新播放</span>
+			</div>
+			<div class="control">
+				<div class="topControl">
+					<!--进度条-->
+					<div class="progressBar">
+						<div class="bufferBar"></div>
+						<div class="timeBar"></div>
+					</div>
+				</div>
+				<div class="btmControl">
+					<!--播放/暂停按钮-->
+					<div class="btnPlay btn"></div>
+					<!--播放时间-->
+					<div class="progressTime">
+					   <span class="current"></span>/<span class="duration"></span>
+					</div>
+					
+					<!--快进/快退 播放速度-->
+					<!--<div class="control">
+					   <a href="#" class="ff">Fast Forward</a>
+					   <a href="#" class="rw">Rewind</a>
+					   <a href="#" class="sl">Slow Motion</a>
+					</div>-->
+					<!--全屏-->
+					<div class="screenbtn btn"></div>
+					<!--开关灯-->
+					<div class="lightbar on btn"></div>
+					<!--音量控制-->
+					<div class="volumBar">
+						<div class="volum"></div>
+					</div>
+					<div class="volumbtn btn"></div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/video.js"></script>
+	</body>
+</html>
