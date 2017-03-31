@@ -1,0 +1,144 @@
+.newVideo {
+	position: relative;
+	width:600px;
+	height:350px;
+	overflow: hidden;
+	background-color:#000 ;
+}
+#myvideo {
+	position: relative;
+	z-index: 11;
+}
+.control {
+	position: absolute;
+	width:100%;
+	background-color:#333 ;
+	color: #ccc;
+	left: 0;
+	z-index: 13;
+	bottom:0;
+}
+/*进度条*/
+.topControl {
+	border-bottom:1px solid #404040;
+	height: 11px;
+	text-align: center;
+	padding:2px 5px;
+	background-color: #1F1F1F;
+	background:-moz-linear-gradient(top,#242424 50%,#1F1F1F 50%,#171717 100%);
+	background:-webkit-linear-gradient(top,#242424 50%,#1F1F1F 50%,#171717 100%);
+	background:-o-linear-gradient(top,#242424 50%,#1F1F1F 50%,#171717 100%);
+}
+.progressBar {
+	position: relative;
+	width:100%;
+	height: 10px;
+	background-color:#5f5e5e ;
+	cursor: pointer;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	overflow: hidden;
+}
+.timeBar {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top:0;
+	height: 100%;
+	background-color:indianred ;
+}
+.bufferBar {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top:0;
+	height: 100%;
+	background-color:#ccc ;
+}
+/*音量等按钮控制*/
+.btmControl {
+	clear: both;
+	background-color: #1F1F1F;
+	height: 30px;
+	line-height: 30px;
+}
+.btmControl>div {
+	float: left;
+}
+.btn {
+	width:30px;
+	height: 30px;
+	padding: 2px 5px;
+	cursor: pointer;
+}
+.btnPlay {
+	background: url(../imgs/control.png) no-repeat 0px 0px;
+}
+/*时间显示*/
+.progressTime {
+	font-size: 14px;
+	/*margin-right: 100px;*/
+}
+/*音量控制*/
+.btmControl>div.volumbtn {
+	background: url(../imgs/control.png) no-repeat -90px -60px;
+	float: right;
+}
+.btmControl>div.volumBar {
+	display: inline-block;
+	position: relative;
+	width:120px;
+	margin-top: 10px;
+	height: 10px;
+	background-color:#5f5e5e ;
+	border-radius: 2px;
+	overflow: hidden;
+	float: right;
+}
+.volum {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top:0;
+	height: 100%;
+	background-color:#ccc ;
+}
+/*灯光按钮*/
+.btmControl>div.lightbar {
+	height: 25px;
+	background: url(../imgs/control.png) no-repeat -45px -30px;
+	float: right;
+	margin-left:15px ;
+}
+.btmControl>div.screenbtn {
+	background: url(../imgs/control.png) no-repeat -45px 0px;
+	float: right;
+	margin-right: 20px;
+	margin-left: 10px;
+}
+.overlay {
+	position: absolute;
+	left: 0;
+	top:0;
+	width:100%;
+	height: 100%;
+	z-index: 1;
+	background-color:#000;
+	opacity:0.9;
+}
+/*重新播放遮罩层*/
+.replaydiv {
+	position: absolute;
+	background-color: #000;
+	display: none;
+	left: 0;
+	top:0;
+	z-index:12;
+}
+.replay {
+	position: absolute;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
